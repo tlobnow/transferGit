@@ -1,0 +1,106 @@
+{
+    "chain_lengths": [
+        83,
+        83,
+        83,
+        83,
+        83,
+        83
+    ],
+    "chains": {
+        "A": "AXIN1_MOUSE-DIX_1",
+        "B": "AXIN1_MOUSE-DIX_1",
+        "C": "AXIN1_MOUSE-DIX_1",
+        "D": "AXIN1_MOUSE-DIX_1",
+        "E": "AXIN1_MOUSE-DIX_1",
+        "F": "AXIN1_MOUSE-DIX_1"
+    },
+    "clusters": {
+        "model_1_multimer_v2_p1_230215_978487": {
+            "cluster_sizes": [
+                6
+            ],
+            "clusters": [
+                [
+                    "AXIN1_MOUSE-DIX_0",
+                    "AXIN1_MOUSE-DIX_1",
+                    "AXIN1_MOUSE-DIX_2",
+                    "AXIN1_MOUSE-DIX_3",
+                    "AXIN1_MOUSE-DIX_4",
+                    "AXIN1_MOUSE-DIX_5"
+                ]
+            ],
+            "num_clusters": 1
+        }
+    },
+    "interface score": {
+        "model_1_multimer_v2_p1_230215_978487": 0.5923,
+        "model_1_multimer_v2_p1_230215_978487_recycled_00": 0.5217,
+        "model_1_multimer_v2_p1_230215_978487_recycled_01": 0.572,
+        "model_1_multimer_v2_p1_230215_978487_recycled_02": 0.5695,
+        "model_1_multimer_v2_p1_230215_978487_recycled_03": 0.5987
+    },
+    "interfacial residue number": {
+        "model_1_multimer_v2_p1_230215_978487": 171,
+        "model_1_multimer_v2_p1_230215_978487_recycled_00": 156,
+        "model_1_multimer_v2_p1_230215_978487_recycled_01": 159,
+        "model_1_multimer_v2_p1_230215_978487_recycled_02": 161,
+        "model_1_multimer_v2_p1_230215_978487_recycled_03": 174
+    },
+    "interficial contact number": {
+        "model_1_multimer_v2_p1_230215_978487": 189,
+        "model_1_multimer_v2_p1_230215_978487_recycled_00": 173,
+        "model_1_multimer_v2_p1_230215_978487_recycled_01": 176,
+        "model_1_multimer_v2_p1_230215_978487_recycled_02": 176,
+        "model_1_multimer_v2_p1_230215_978487_recycled_03": 192
+    },
+    "iptm+ptm": {
+        "model_1_multimer_v2_p1_230215_978487": 0.5042
+    },
+    "iterations": {
+        "model_1_multimer_v2_p1_230215_978487": 4
+    },
+    "model_preset": "multimer_np",
+    "msa_pairing": "all",
+    "order": [
+        "model_1_multimer_v2_p1_230215_978487_recycled_03",
+        "model_1_multimer_v2_p1_230215_978487",
+        "model_1_multimer_v2_p1_230215_978487_recycled_01",
+        "model_1_multimer_v2_p1_230215_978487_recycled_02",
+        "model_1_multimer_v2_p1_230215_978487_recycled_00"
+    ],
+    "pitms": {
+        "model_1_multimer_v2_p1_230215_978487": 0.5169,
+        "model_1_multimer_v2_p1_230215_978487_recycled_00": 0.4918,
+        "model_1_multimer_v2_p1_230215_978487_recycled_01": 0.5137,
+        "model_1_multimer_v2_p1_230215_978487_recycled_02": 0.5156,
+        "model_1_multimer_v2_p1_230215_978487_recycled_03": 0.528
+    },
+    "plddts": {
+        "model_1_multimer_v2_p1_230215_978487": 85.28,
+        "model_1_multimer_v2_p1_230215_978487_recycled_00": 81.58,
+        "model_1_multimer_v2_p1_230215_978487_recycled_01": 84.53,
+        "model_1_multimer_v2_p1_230215_978487_recycled_02": 84.69,
+        "model_1_multimer_v2_p1_230215_978487_recycled_03": 85.31
+    },
+    "ptms": {
+        "model_1_multimer_v2_p1_230215_978487": 0.564,
+        "model_1_multimer_v2_p1_230215_978487_recycled_00": 0.5131,
+        "model_1_multimer_v2_p1_230215_978487_recycled_01": 0.5596,
+        "model_1_multimer_v2_p1_230215_978487_recycled_02": 0.5567,
+        "model_1_multimer_v2_p1_230215_978487_recycled_03": 0.5702
+    },
+    "ranking_metric": "pTM",
+    "timings": {
+        "features": 0.87,
+        "predict_and_compile_model_1_multimer_v2_p1_230215_978487": 297.1,
+        "process_features_model_1_multimer_v2_p1_230215_978487": 0.0
+    },
+    "tol_values": {
+        "model_1_multimer_v2_p1_230215_978487": 0.097,
+        "model_1_multimer_v2_p1_230215_978487_recycled_00": Infinity,
+        "model_1_multimer_v2_p1_230215_978487_recycled_01": 47.67,
+        "model_1_multimer_v2_p1_230215_978487_recycled_02": 0.89,
+        "model_1_multimer_v2_p1_230215_978487_recycled_03": 0.1
+    }
+}

@@ -1,0 +1,437 @@
+Info: input file name is DVL1_MOUSE-DIX_x6
+Info: input target list is /u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/target.lst
+Info: input feature directory is /u/flobnow/workingLama/feature_files
+Info: result output directory is /u/flobnow/workingLama/output_files
+Info: model preset is multimer_np
+Info: msa pairing is all
+Info: recycling setting is 1
+Info: using preset super2
+Info: set num_ensemble = 2
+Info: set max_recyles = 20
+Info: set recycle_tol = 0.1
+Info: mas_pairing mode is all
+I0215 21:31:20.143226 23379455805248 tpu_client.py:54] Starting the local TPU driver.
+I0215 21:31:20.187558 23379455805248 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0215 21:31:20.517286 23379455805248 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0215 21:31:23.334398 23379455805248 run_af2c_mod.py:481] Have 1 models: ['model_1_multimer_v2_p1']
+Info: working on target DVL1_MOUSE-DIX_x6
+I0215 21:31:28.339611 23379455805248 run_af2c_mod.py:512] Using random seed 8619676063166252268 for the data pipeline
+Info: DVL1_MOUSE-DIX_x6 found monomer DVL1_MOUSE-DIX msa_depth = 1502, seq_len = 85, num_templ = 17
+Info: DVL1_MOUSE-DIX reducing the number of structural templates to 4
+Info: 6 chain(s) to model {'A': 'DVL1_MOUSE-DIX_1', 'B': 'DVL1_MOUSE-DIX_1', 'C': 'DVL1_MOUSE-DIX_1', 'D': 'DVL1_MOUSE-DIX_1', 'E': 'DVL1_MOUSE-DIX_1', 'F': 'DVL1_MOUSE-DIX_1'}
+Info: modeling DVL1_MOUSE-DIX_x6 with msa_depth = 1502, seq_len = 510, num_templ = 24
+I0215 21:31:29.442888 23379455805248 run_af2c_mod.py:216] Running model model_1_multimer_v2_p1_230215_252268
+I0215 21:31:29.443333 23379455805248 model.py:205] Running predict with shape(feat) = {'msa': (1502, 510), 'bert_mask': (1502, 510), 'num_alignments': (), 'aatype': (510,), 'seq_length': (), 'template_aatype': (24, 510), 'template_all_atom_mask': (24, 510, 37), 'template_all_atom_positions': (24, 510, 37, 3), 'all_atom_positions': (510, 37, 3), 'template_domain_names': (24,), 'asym_id': (510,), 'sym_id': (510,), 'entity_id': (510,), 'residue_index': (510,), 'deletion_matrix': (1502, 510), 'seq_mask': (510,), 'msa_mask': (1502, 510), 'cluster_bias_mask': (1502,), 'pdb_residue_index': (510,)}
+I0215 21:37:34.596633 23379455805248 run_af2c_mod.py:270] Total JAX model model_1_multimer_v2_p1_230215_252268 predict time (includes compilation time): 365.2 seconds
+Info: DVL1_MOUSE-DIX_x6 model_1_multimer_v2_p1_230215_252268_recycled_00,  tol =   inf, pLDDT = 80.97, pTM-score = 0.4154, piTM-score = 0.3294, interface-score = 0.3845, iRes = 102  iCnt = 106 
+Info: DVL1_MOUSE-DIX_x6 model_1_multimer_v2_p1_230215_252268_recycled_01,  tol = 50.45, pLDDT = 89.64, pTM-score = 0.6898, piTM-score = 0.6066, interface-score = 0.7299, iRes = 149  iCnt = 164 
+Info: DVL1_MOUSE-DIX_x6 model_1_multimer_v2_p1_230215_252268_recycled_02,  tol =  2.51, pLDDT = 91.84, pTM-score = 0.7573, piTM-score = 0.6701, interface-score = 0.7894, iRes = 151  iCnt = 166 
+Info: DVL1_MOUSE-DIX_x6 model_1_multimer_v2_p1_230215_252268_recycled_03,  tol =  0.36, pLDDT = 92.32, pTM-score = 0.7702, piTM-score = 0.6831, interface-score = 0.8060, iRes = 152  iCnt = 167 
+Info: DVL1_MOUSE-DIX_x6 model_1_multimer_v2_p1_230215_252268_recycled_04,  tol =  0.26, pLDDT = 92.08, pTM-score = 0.7561, piTM-score = 0.6683, interface-score = 0.7947, iRes = 151  iCnt = 166 
+Info: DVL1_MOUSE-DIX_x6 model_1_multimer_v2_p1_230215_252268_recycled_05,  tol =  0.14, pLDDT = 92.34, pTM-score = 0.7671, piTM-score = 0.6847, interface-score = 0.8040, iRes = 154  iCnt = 169 
+Info: DVL1_MOUSE-DIX_x6 model_1_multimer_v2_p1_230215_252268_recycled_06,  tol =  0.13, pLDDT = 92.00, pTM-score = 0.7547, piTM-score = 0.6717, interface-score = 0.7938, iRes = 154  iCnt = 169 
+Info: DVL1_MOUSE-DIX_x6 model_1_multimer_v2_p1_230215_252268 performed 7 recycles, final tol = 0.06, pLDDT = 91.36, pTM-score = 0.7562, piTM-score = 0.6674, interface-score = 0.7917, iRes = 149  iCnt = 162 
+Info: num_clusters = 1, cluster_sizes = [6],  clusters = [['DVL1_MOUSE-DIX_0', 'DVL1_MOUSE-DIX_1', 'DVL1_MOUSE-DIX_2', 'DVL1_MOUSE-DIX_3', 'DVL1_MOUSE-DIX_4', 'DVL1_MOUSE-DIX_5']]
+
+I0215 21:37:36.615238 23379455805248 run_af2c_mod.py:404] Final timings for DVL1_MOUSE-DIX_x6: {'features': 1.1, 'process_features_model_1_multimer_v2_p1_230215_252268': 0.0, 'predict_and_compile_model_1_multimer_v2_p1_230215_252268': 365.2}
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  1_AF2C
+Node list: ravg1082
+Job start: Wed Feb 15 21:30:34 CET 2023
+Job end:   Wed Feb 15 21:37:38 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/script2_comp_model_1.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4204164           1_AF2C      1           108                             00:07:04      0:0
+4204164.0        python3      1      1    108    17865.35M    17865.35M   00:06:57      0:0
+  
+Maximum memory per node: 18.733173 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 1.7 %
+  
+Info: input file name is DVL1_MOUSE-DIX_x6
+Info: input target list is /u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/target.lst
+Info: input feature directory is /u/flobnow/workingLama/feature_files
+Info: result output directory is /u/flobnow/workingLama/output_files
+Info: model preset is multimer_np
+Info: msa pairing is all
+Info: recycling setting is 1
+Info: using preset super2
+Info: set num_ensemble = 2
+Info: set max_recyles = 20
+Info: set recycle_tol = 0.1
+Info: mas_pairing mode is all
+I0215 21:31:20.136546 23139949537088 tpu_client.py:54] Starting the local TPU driver.
+I0215 21:31:20.187547 23139949537088 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0215 21:31:20.516069 23139949537088 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0215 21:31:23.267413 23139949537088 run_af2c_mod.py:481] Have 1 models: ['model_2_multimer_v2_p1']
+Info: working on target DVL1_MOUSE-DIX_x6
+I0215 21:31:25.269623 23139949537088 run_af2c_mod.py:512] Using random seed 4358951501133202212 for the data pipeline
+Info: DVL1_MOUSE-DIX_x6 found monomer DVL1_MOUSE-DIX msa_depth = 1502, seq_len = 85, num_templ = 17
+Info: DVL1_MOUSE-DIX reducing the number of structural templates to 4
+Info: 6 chain(s) to model {'A': 'DVL1_MOUSE-DIX_1', 'B': 'DVL1_MOUSE-DIX_1', 'C': 'DVL1_MOUSE-DIX_1', 'D': 'DVL1_MOUSE-DIX_1', 'E': 'DVL1_MOUSE-DIX_1', 'F': 'DVL1_MOUSE-DIX_1'}
+Info: modeling DVL1_MOUSE-DIX_x6 with msa_depth = 1502, seq_len = 510, num_templ = 24
+I0215 21:31:26.397956 23139949537088 run_af2c_mod.py:216] Running model model_2_multimer_v2_p1_230215_202212
+I0215 21:31:26.398384 23139949537088 model.py:205] Running predict with shape(feat) = {'msa': (1502, 510), 'bert_mask': (1502, 510), 'num_alignments': (), 'aatype': (510,), 'seq_length': (), 'template_aatype': (24, 510), 'template_all_atom_mask': (24, 510, 37), 'template_all_atom_positions': (24, 510, 37, 3), 'all_atom_positions': (510, 37, 3), 'template_domain_names': (24,), 'asym_id': (510,), 'sym_id': (510,), 'entity_id': (510,), 'residue_index': (510,), 'deletion_matrix': (1502, 510), 'seq_mask': (510,), 'msa_mask': (1502, 510), 'cluster_bias_mask': (1502,), 'pdb_residue_index': (510,)}
+I0215 21:42:18.189238 23139949537088 run_af2c_mod.py:270] Total JAX model model_2_multimer_v2_p1_230215_202212 predict time (includes compilation time): 651.8 seconds
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_00,  tol =   inf, pLDDT = 76.02, pTM-score = 0.4126, piTM-score = 0.4020, interface-score = 0.3828, iRes = 121  iCnt = 126 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_01,  tol = 47.48, pLDDT = 71.45, pTM-score = 0.2493, piTM-score = 0.1497, interface-score = 0.0367, iRes = 32   iCnt = 21  
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_02,  tol = 17.81, pLDDT = 79.26, pTM-score = 0.5113, piTM-score = 0.4658, interface-score = 0.5010, iRes = 140  iCnt = 142 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_03,  tol = 14.00, pLDDT = 77.16, pTM-score = 0.3652, piTM-score = 0.2995, interface-score = 0.3503, iRes = 112  iCnt = 111 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_04,  tol = 15.68, pLDDT = 76.43, pTM-score = 0.4147, piTM-score = 0.3637, interface-score = 0.3421, iRes = 130  iCnt = 132 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_05,  tol = 15.48, pLDDT = 78.81, pTM-score = 0.4323, piTM-score = 0.3323, interface-score = 0.4023, iRes = 129  iCnt = 118 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_06,  tol = 14.18, pLDDT = 82.69, pTM-score = 0.5592, piTM-score = 0.4575, interface-score = 0.5755, iRes = 129  iCnt = 119 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_07,  tol = 17.02, pLDDT = 74.37, pTM-score = 0.3138, piTM-score = 0.3760, interface-score = 0.2215, iRes = 58   iCnt = 57  
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_08,  tol = 20.33, pLDDT = 80.21, pTM-score = 0.4756, piTM-score = 0.4329, interface-score = 0.4683, iRes = 142  iCnt = 151 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_09,  tol =  9.49, pLDDT = 76.66, pTM-score = 0.4070, piTM-score = 0.3639, interface-score = 0.3521, iRes = 131  iCnt = 142 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_10,  tol =  2.18, pLDDT = 74.67, pTM-score = 0.3174, piTM-score = 0.3497, interface-score = 0.2888, iRes = 75   iCnt = 74  
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_11,  tol = 24.82, pLDDT = 77.26, pTM-score = 0.3990, piTM-score = 0.3537, interface-score = 0.3377, iRes = 130  iCnt = 139 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_12,  tol =  7.12, pLDDT = 77.35, pTM-score = 0.4551, piTM-score = 0.4311, interface-score = 0.4201, iRes = 125  iCnt = 131 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_13,  tol = 15.41, pLDDT = 74.70, pTM-score = 0.3208, piTM-score = 0.3236, interface-score = 0.2368, iRes = 81   iCnt = 77  
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_14,  tol = 10.21, pLDDT = 79.45, pTM-score = 0.4440, piTM-score = 0.3996, interface-score = 0.4155, iRes = 144  iCnt = 156 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_15,  tol = 20.78, pLDDT = 73.34, pTM-score = 0.2977, piTM-score = 0.2367, interface-score = 0.2124, iRes = 60   iCnt = 53  
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_16,  tol = 23.33, pLDDT = 75.05, pTM-score = 0.3353, piTM-score = 0.2688, interface-score = 0.2568, iRes = 93   iCnt = 84  
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_17,  tol = 19.60, pLDDT = 74.43, pTM-score = 0.3360, piTM-score = 0.3039, interface-score = 0.2481, iRes = 80   iCnt = 82  
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_18,  tol =  1.89, pLDDT = 78.96, pTM-score = 0.4436, piTM-score = 0.3821, interface-score = 0.4708, iRes = 124  iCnt = 131 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212_recycled_19,  tol = 22.84, pLDDT = 80.27, pTM-score = 0.5153, piTM-score = 0.4160, interface-score = 0.5539, iRes = 143  iCnt = 143 
+Info: DVL1_MOUSE-DIX_x6 model_2_multimer_v2_p1_230215_202212 performed 20 recycles, final tol = 18.38, pLDDT = 71.56, pTM-score = 0.2455, piTM-score = 0.2182, interface-score = 0.0603, iRes = 37   iCnt = 30  
+Info: num_clusters = 5, cluster_sizes = [2, 1, 1, 1, 1],  clusters = [['DVL1_MOUSE-DIX_0', 'DVL1_MOUSE-DIX_1'], ['DVL1_MOUSE-DIX_2'], ['DVL1_MOUSE-DIX_3'], ['DVL1_MOUSE-DIX_4'], ['DVL1_MOUSE-DIX_5']]
+
+I0215 21:42:20.261479 23139949537088 run_af2c_mod.py:404] Final timings for DVL1_MOUSE-DIX_x6: {'features': 1.12, 'process_features_model_2_multimer_v2_p1_230215_202212': 0.0, 'predict_and_compile_model_2_multimer_v2_p1_230215_202212': 651.8}
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  2_AF2C
+Node list: ravg1083
+Job start: Wed Feb 15 21:30:34 CET 2023
+Job end:   Wed Feb 15 21:42:22 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/script2_comp_model_2.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4204165           2_AF2C      1           108                             00:11:48      0:0
+4204165.0        python3      1      1    108    21040.33M    21040.33M   00:11:41      0:0
+  
+Maximum memory per node: 22.062387 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 1.8 %
+  
+Info: input file name is DVL1_MOUSE-DIX_x6
+Info: input target list is /u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/target.lst
+Info: input feature directory is /u/flobnow/workingLama/feature_files
+Info: result output directory is /u/flobnow/workingLama/output_files
+Info: model preset is multimer_np
+Info: msa pairing is all
+Info: recycling setting is 1
+Info: using preset super2
+Info: set num_ensemble = 2
+Info: set max_recyles = 20
+Info: set recycle_tol = 0.1
+Info: mas_pairing mode is all
+I0215 21:31:20.142320 22621937760064 tpu_client.py:54] Starting the local TPU driver.
+I0215 21:31:20.187510 22621937760064 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0215 21:31:20.516868 22621937760064 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0215 21:31:23.281601 22621937760064 run_af2c_mod.py:481] Have 1 models: ['model_3_multimer_v2_p1']
+Info: working on target DVL1_MOUSE-DIX_x6
+I0215 21:31:31.289822 22621937760064 run_af2c_mod.py:512] Using random seed 5966718610223628936 for the data pipeline
+Info: DVL1_MOUSE-DIX_x6 found monomer DVL1_MOUSE-DIX msa_depth = 1502, seq_len = 85, num_templ = 17
+Info: DVL1_MOUSE-DIX reducing the number of structural templates to 4
+Info: 6 chain(s) to model {'A': 'DVL1_MOUSE-DIX_1', 'B': 'DVL1_MOUSE-DIX_1', 'C': 'DVL1_MOUSE-DIX_1', 'D': 'DVL1_MOUSE-DIX_1', 'E': 'DVL1_MOUSE-DIX_1', 'F': 'DVL1_MOUSE-DIX_1'}
+Info: modeling DVL1_MOUSE-DIX_x6 with msa_depth = 1502, seq_len = 510, num_templ = 24
+I0215 21:31:32.398465 22621937760064 run_af2c_mod.py:216] Running model model_3_multimer_v2_p1_230215_628936
+I0215 21:31:32.398906 22621937760064 model.py:205] Running predict with shape(feat) = {'msa': (1502, 510), 'bert_mask': (1502, 510), 'num_alignments': (), 'aatype': (510,), 'seq_length': (), 'template_aatype': (24, 510), 'template_all_atom_mask': (24, 510, 37), 'template_all_atom_positions': (24, 510, 37, 3), 'all_atom_positions': (510, 37, 3), 'template_domain_names': (24,), 'asym_id': (510,), 'sym_id': (510,), 'entity_id': (510,), 'residue_index': (510,), 'deletion_matrix': (1502, 510), 'seq_mask': (510,), 'msa_mask': (1502, 510), 'cluster_bias_mask': (1502,), 'pdb_residue_index': (510,)}
+I0215 21:37:35.989894 22621937760064 run_af2c_mod.py:270] Total JAX model model_3_multimer_v2_p1_230215_628936 predict time (includes compilation time): 363.6 seconds
+Info: DVL1_MOUSE-DIX_x6 model_3_multimer_v2_p1_230215_628936_recycled_00,  tol =   inf, pLDDT = 73.85, pTM-score = 0.3144, piTM-score = 0.3024, interface-score = 0.1625, iRes = 75   iCnt = 70  
+Info: DVL1_MOUSE-DIX_x6 model_3_multimer_v2_p1_230215_628936_recycled_01,  tol = 48.81, pLDDT = 75.20, pTM-score = 0.3759, piTM-score = 0.3706, interface-score = 0.2563, iRes = 84   iCnt = 86  
+Info: DVL1_MOUSE-DIX_x6 model_3_multimer_v2_p1_230215_628936_recycled_02,  tol = 19.13, pLDDT = 85.52, pTM-score = 0.6101, piTM-score = 0.5323, interface-score = 0.5938, iRes = 142  iCnt = 155 
+Info: DVL1_MOUSE-DIX_x6 model_3_multimer_v2_p1_230215_628936_recycled_03,  tol = 10.69, pLDDT = 89.30, pTM-score = 0.7113, piTM-score = 0.6207, interface-score = 0.7189, iRes = 147  iCnt = 162 
+Info: DVL1_MOUSE-DIX_x6 model_3_multimer_v2_p1_230215_628936_recycled_04,  tol =  1.05, pLDDT = 90.33, pTM-score = 0.7388, piTM-score = 0.6581, interface-score = 0.7579, iRes = 153  iCnt = 168 
+Info: DVL1_MOUSE-DIX_x6 model_3_multimer_v2_p1_230215_628936_recycled_05,  tol =  0.48, pLDDT = 90.86, pTM-score = 0.7514, piTM-score = 0.6692, interface-score = 0.7774, iRes = 150  iCnt = 165 
+Info: DVL1_MOUSE-DIX_x6 model_3_multimer_v2_p1_230215_628936_recycled_06,  tol =  0.21, pLDDT = 90.94, pTM-score = 0.7531, piTM-score = 0.6709, interface-score = 0.7776, iRes = 149  iCnt = 164 
+Info: DVL1_MOUSE-DIX_x6 model_3_multimer_v2_p1_230215_628936 performed 7 recycles, final tol = 0.07, pLDDT = 90.71, pTM-score = 0.7469, piTM-score = 0.6670, interface-score = 0.7733, iRes = 149  iCnt = 164 
+Info: num_clusters = 1, cluster_sizes = [6],  clusters = [['DVL1_MOUSE-DIX_0', 'DVL1_MOUSE-DIX_1', 'DVL1_MOUSE-DIX_2', 'DVL1_MOUSE-DIX_3', 'DVL1_MOUSE-DIX_4', 'DVL1_MOUSE-DIX_5']]
+
+I0215 21:37:38.120658 22621937760064 run_af2c_mod.py:404] Final timings for DVL1_MOUSE-DIX_x6: {'features': 1.11, 'process_features_model_3_multimer_v2_p1_230215_628936': 0.0, 'predict_and_compile_model_3_multimer_v2_p1_230215_628936': 363.6}
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  3_AF2C
+Node list: ravg1084
+Job start: Wed Feb 15 21:30:34 CET 2023
+Job end:   Wed Feb 15 21:37:39 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/script2_comp_model_3.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4204166           3_AF2C      1           108                             00:07:05      0:0
+4204166.0        python3      1      1    108    17914.41M    17914.41M   00:06:58      0:0
+  
+Maximum memory per node: 18.784625 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 1.7 %
+  
+Info: input file name is DVL1_MOUSE-DIX_x6
+Info: input target list is /u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/target.lst
+Info: input feature directory is /u/flobnow/workingLama/feature_files
+Info: result output directory is /u/flobnow/workingLama/output_files
+Info: model preset is multimer_np
+Info: msa pairing is all
+Info: recycling setting is 1
+Info: using preset super2
+Info: set num_ensemble = 2
+Info: set max_recyles = 20
+Info: set recycle_tol = 0.1
+Info: mas_pairing mode is all
+I0215 21:31:20.136775 23070077921088 tpu_client.py:54] Starting the local TPU driver.
+I0215 21:31:20.187583 23070077921088 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0215 21:31:20.526433 23070077921088 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0215 21:31:23.257999 23070077921088 run_af2c_mod.py:481] Have 1 models: ['model_4_multimer_v2_p1']
+Info: working on target DVL1_MOUSE-DIX_x6
+I0215 21:31:27.262206 23070077921088 run_af2c_mod.py:512] Using random seed 7431270671096464753 for the data pipeline
+Info: DVL1_MOUSE-DIX_x6 found monomer DVL1_MOUSE-DIX msa_depth = 1502, seq_len = 85, num_templ = 17
+Info: DVL1_MOUSE-DIX reducing the number of structural templates to 4
+Info: 6 chain(s) to model {'A': 'DVL1_MOUSE-DIX_1', 'B': 'DVL1_MOUSE-DIX_1', 'C': 'DVL1_MOUSE-DIX_1', 'D': 'DVL1_MOUSE-DIX_1', 'E': 'DVL1_MOUSE-DIX_1', 'F': 'DVL1_MOUSE-DIX_1'}
+Info: modeling DVL1_MOUSE-DIX_x6 with msa_depth = 1502, seq_len = 510, num_templ = 24
+I0215 21:31:28.369476 23070077921088 run_af2c_mod.py:216] Running model model_4_multimer_v2_p1_230215_464753
+I0215 21:31:28.369905 23070077921088 model.py:205] Running predict with shape(feat) = {'msa': (1502, 510), 'bert_mask': (1502, 510), 'num_alignments': (), 'aatype': (510,), 'seq_length': (), 'template_aatype': (24, 510), 'template_all_atom_mask': (24, 510, 37), 'template_all_atom_positions': (24, 510, 37, 3), 'all_atom_positions': (510, 37, 3), 'template_domain_names': (24,), 'asym_id': (510,), 'sym_id': (510,), 'entity_id': (510,), 'residue_index': (510,), 'deletion_matrix': (1502, 510), 'seq_mask': (510,), 'msa_mask': (1502, 510), 'cluster_bias_mask': (1502,), 'pdb_residue_index': (510,)}
+I0215 21:37:34.622876 23070077921088 run_af2c_mod.py:270] Total JAX model model_4_multimer_v2_p1_230215_464753 predict time (includes compilation time): 366.3 seconds
+Info: DVL1_MOUSE-DIX_x6 model_4_multimer_v2_p1_230215_464753_recycled_00,  tol =   inf, pLDDT = 71.43, pTM-score = 0.3171, piTM-score = 0.3089, interface-score = 0.2420, iRes = 62   iCnt = 59  
+Info: DVL1_MOUSE-DIX_x6 model_4_multimer_v2_p1_230215_464753_recycled_01,  tol = 46.50, pLDDT = 70.69, pTM-score = 0.3337, piTM-score = 0.3271, interface-score = 0.2486, iRes = 70   iCnt = 72  
+Info: DVL1_MOUSE-DIX_x6 model_4_multimer_v2_p1_230215_464753_recycled_02,  tol =  2.48, pLDDT = 72.95, pTM-score = 0.3616, piTM-score = 0.3189, interface-score = 0.2986, iRes = 90   iCnt = 91  
+Info: DVL1_MOUSE-DIX_x6 model_4_multimer_v2_p1_230215_464753_recycled_03,  tol =  9.57, pLDDT = 85.88, pTM-score = 0.6141, piTM-score = 0.5298, interface-score = 0.6488, iRes = 149  iCnt = 163 
+Info: DVL1_MOUSE-DIX_x6 model_4_multimer_v2_p1_230215_464753_recycled_04,  tol =  2.11, pLDDT = 87.49, pTM-score = 0.6672, piTM-score = 0.5809, interface-score = 0.6935, iRes = 152  iCnt = 166 
+Info: DVL1_MOUSE-DIX_x6 model_4_multimer_v2_p1_230215_464753_recycled_05,  tol =  0.34, pLDDT = 87.48, pTM-score = 0.6678, piTM-score = 0.5869, interface-score = 0.6939, iRes = 152  iCnt = 165 
+Info: DVL1_MOUSE-DIX_x6 model_4_multimer_v2_p1_230215_464753_recycled_06,  tol =  0.24, pLDDT = 88.16, pTM-score = 0.6858, piTM-score = 0.6050, interface-score = 0.7125, iRes = 155  iCnt = 168 
+Info: DVL1_MOUSE-DIX_x6 model_4_multimer_v2_p1_230215_464753 performed 7 recycles, final tol = 0.09, pLDDT = 88.03, pTM-score = 0.6831, piTM-score = 0.6042, interface-score = 0.7103, iRes = 155  iCnt = 168 
+Info: num_clusters = 1, cluster_sizes = [6],  clusters = [['DVL1_MOUSE-DIX_0', 'DVL1_MOUSE-DIX_1', 'DVL1_MOUSE-DIX_2', 'DVL1_MOUSE-DIX_3', 'DVL1_MOUSE-DIX_4', 'DVL1_MOUSE-DIX_5']]
+
+I0215 21:37:36.747367 23070077921088 run_af2c_mod.py:404] Final timings for DVL1_MOUSE-DIX_x6: {'features': 1.11, 'process_features_model_4_multimer_v2_p1_230215_464753': 0.0, 'predict_and_compile_model_4_multimer_v2_p1_230215_464753': 366.3}
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  4_AF2C
+Node list: ravg1085
+Job start: Wed Feb 15 21:30:34 CET 2023
+Job end:   Wed Feb 15 21:37:39 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/script2_comp_model_4.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4204167           4_AF2C      1           108                             00:07:05      0:0
+4204167.0        python3      1      1    108    17854.07M    17854.07M   00:06:58      0:0
+  
+Maximum memory per node: 18.721352 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 1.7 %
+  
+Info: input file name is DVL1_MOUSE-DIX_x6
+Info: input target list is /u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/target.lst
+Info: input feature directory is /u/flobnow/workingLama/feature_files
+Info: result output directory is /u/flobnow/workingLama/output_files
+Info: model preset is multimer_np
+Info: msa pairing is all
+Info: recycling setting is 1
+Info: using preset super2
+Info: set num_ensemble = 2
+Info: set max_recyles = 20
+Info: set recycle_tol = 0.1
+Info: mas_pairing mode is all
+I0215 21:31:20.138256 23075990345536 tpu_client.py:54] Starting the local TPU driver.
+I0215 21:31:20.187500 23075990345536 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0215 21:31:20.514039 23075990345536 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0215 21:31:23.291754 23075990345536 run_af2c_mod.py:481] Have 1 models: ['model_5_multimer_v2_p1']
+Info: working on target DVL1_MOUSE-DIX_x6
+I0215 21:31:26.294961 23075990345536 run_af2c_mod.py:512] Using random seed 6915290220309314191 for the data pipeline
+Info: DVL1_MOUSE-DIX_x6 found monomer DVL1_MOUSE-DIX msa_depth = 1502, seq_len = 85, num_templ = 17
+Info: DVL1_MOUSE-DIX reducing the number of structural templates to 4
+Info: 6 chain(s) to model {'A': 'DVL1_MOUSE-DIX_1', 'B': 'DVL1_MOUSE-DIX_1', 'C': 'DVL1_MOUSE-DIX_1', 'D': 'DVL1_MOUSE-DIX_1', 'E': 'DVL1_MOUSE-DIX_1', 'F': 'DVL1_MOUSE-DIX_1'}
+Info: modeling DVL1_MOUSE-DIX_x6 with msa_depth = 1502, seq_len = 510, num_templ = 24
+I0215 21:31:27.405277 23075990345536 run_af2c_mod.py:216] Running model model_5_multimer_v2_p1_230215_314191
+I0215 21:31:27.405711 23075990345536 model.py:205] Running predict with shape(feat) = {'msa': (1502, 510), 'bert_mask': (1502, 510), 'num_alignments': (), 'aatype': (510,), 'seq_length': (), 'template_aatype': (24, 510), 'template_all_atom_mask': (24, 510, 37), 'template_all_atom_positions': (24, 510, 37, 3), 'all_atom_positions': (510, 37, 3), 'template_domain_names': (24,), 'asym_id': (510,), 'sym_id': (510,), 'entity_id': (510,), 'residue_index': (510,), 'deletion_matrix': (1502, 510), 'seq_mask': (510,), 'msa_mask': (1502, 510), 'cluster_bias_mask': (1502,), 'pdb_residue_index': (510,)}
+I0215 21:38:58.363198 23075990345536 run_af2c_mod.py:270] Total JAX model model_5_multimer_v2_p1_230215_314191 predict time (includes compilation time): 451.0 seconds
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191_recycled_00,  tol =   inf, pLDDT = 75.31, pTM-score = 0.3875, piTM-score = 0.3787, interface-score = 0.3058, iRes = 104  iCnt = 106 
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191_recycled_01,  tol = 53.41, pLDDT = 86.73, pTM-score = 0.6794, piTM-score = 0.6073, interface-score = 0.7078, iRes = 159  iCnt = 174 
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191_recycled_02,  tol =  6.03, pLDDT = 88.55, pTM-score = 0.7100, piTM-score = 0.6519, interface-score = 0.7434, iRes = 157  iCnt = 173 
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191_recycled_03,  tol =  0.47, pLDDT = 88.34, pTM-score = 0.6969, piTM-score = 0.6528, interface-score = 0.7388, iRes = 159  iCnt = 175 
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191_recycled_04,  tol =  0.41, pLDDT = 88.04, pTM-score = 0.6925, piTM-score = 0.6431, interface-score = 0.7320, iRes = 155  iCnt = 168 
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191_recycled_05,  tol =  0.11, pLDDT = 88.41, pTM-score = 0.7040, piTM-score = 0.6537, interface-score = 0.7426, iRes = 154  iCnt = 167 
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191_recycled_06,  tol =  0.25, pLDDT = 87.98, pTM-score = 0.6859, piTM-score = 0.6375, interface-score = 0.7265, iRes = 154  iCnt = 167 
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191_recycled_07,  tol =  0.14, pLDDT = 87.92, pTM-score = 0.6870, piTM-score = 0.6390, interface-score = 0.7297, iRes = 156  iCnt = 169 
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191_recycled_08,  tol =  0.20, pLDDT = 88.23, pTM-score = 0.6965, piTM-score = 0.6497, interface-score = 0.7366, iRes = 157  iCnt = 167 
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191_recycled_09,  tol =  0.11, pLDDT = 88.13, pTM-score = 0.6933, piTM-score = 0.6503, interface-score = 0.7334, iRes = 155  iCnt = 164 
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191_recycled_10,  tol =  0.10, pLDDT = 88.19, pTM-score = 0.6950, piTM-score = 0.6475, interface-score = 0.7326, iRes = 155  iCnt = 167 
+Info: DVL1_MOUSE-DIX_x6 model_5_multimer_v2_p1_230215_314191 performed 11 recycles, final tol = 0.06, pLDDT = 88.50, pTM-score = 0.7036, piTM-score = 0.6630, interface-score = 0.7430, iRes = 157  iCnt = 174 
+Info: num_clusters = 1, cluster_sizes = [6],  clusters = [['DVL1_MOUSE-DIX_0', 'DVL1_MOUSE-DIX_1', 'DVL1_MOUSE-DIX_2', 'DVL1_MOUSE-DIX_3', 'DVL1_MOUSE-DIX_4', 'DVL1_MOUSE-DIX_5']]
+
+I0215 21:39:00.458826 23075990345536 run_af2c_mod.py:404] Final timings for DVL1_MOUSE-DIX_x6: {'features': 1.1, 'process_features_model_5_multimer_v2_p1_230215_314191': 0.0, 'predict_and_compile_model_5_multimer_v2_p1_230215_314191': 451.0}
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  5_AF2C
+Node list: ravg1086
+Job start: Wed Feb 15 21:30:34 CET 2023
+Job end:   Wed Feb 15 21:39:02 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/script2_comp_model_5.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4204168           5_AF2C      1           108                             00:08:28      0:0
+4204168.0        python3      1      1    108    18870.11M    18870.11M   00:08:21      0:0
+  
+Maximum memory per node: 19.786742 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 1.8 %
+  
+Info: target file is /u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/target.lst
+Info: input directory of unrelaxed models is /u/flobnow/workingLama/output_files
+Info: output directory of relaxed models is /u/flobnow/workingLama/output_files
+/bin/sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:54:52.076532 22419413100352 run_af2c_min.py:88] DVL1_MOUSE-DIX_x6 processing model_2_multimer_v2_p1_230215_202212.pdb
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:55:01.372950 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 84 (GLU) of chain 0>: ['OXT'], <Residue 169 (GLU) of chain 1>: ['OXT'], <Residue 254 (GLU) of chain 2>: ['OXT'], <Residue 339 (GLU) of chain 3>: ['OXT'], <Residue 424 (GLU) of chain 4>: ['OXT'], <Residue 509 (GLU) of chain 5>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:55:02.163495 22419413100352 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0215 21:55:03.057290 22419413100352 amber_minimize.py:69] Restraining 4182 / 8316 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:55:32.531708 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:55:33.341125 22419413100352 tpu_client.py:54] Starting the local TPU driver.
+I0215 21:55:33.432406 22419413100352 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0215 21:55:33.665064 22419413100352 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0215 21:55:43.228426 22419413100352 amber_minimize.py:500] Iteration completed: Einit 3588736.31 Efinal -4661.00 Time 25.37 s num residue violations 0 num residue exclusions 0 
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:55:48.434503 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 84 (GLU) of chain 0>: ['OXT'], <Residue 169 (GLU) of chain 1>: ['OXT'], <Residue 254 (GLU) of chain 2>: ['OXT'], <Residue 339 (GLU) of chain 3>: ['OXT'], <Residue 424 (GLU) of chain 4>: ['OXT'], <Residue 509 (GLU) of chain 5>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:55:49.962544 22419413100352 run_af2c_min.py:110] DVL1_MOUSE-DIX_x6 relaxation done, time spent 57.7 seconds, Efinal -4661.00, rmsd 0.41
+I0215 21:55:49.962659 22419413100352 run_af2c_min.py:88] DVL1_MOUSE-DIX_x6 processing model_1_multimer_v2_p1_230215_252268.pdb
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:55:55.134434 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 84 (GLU) of chain 0>: ['OXT'], <Residue 169 (GLU) of chain 1>: ['OXT'], <Residue 254 (GLU) of chain 2>: ['OXT'], <Residue 339 (GLU) of chain 3>: ['OXT'], <Residue 424 (GLU) of chain 4>: ['OXT'], <Residue 509 (GLU) of chain 5>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:55:55.869287 22419413100352 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0215 21:55:56.737687 22419413100352 amber_minimize.py:69] Restraining 4182 / 8316 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:56:29.351042 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:56:30.987571 22419413100352 amber_minimize.py:500] Iteration completed: Einit 8017918248.33 Efinal -6385.23 Time 29.17 s num residue violations 0 num residue exclusions 0 
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:56:36.102987 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 84 (GLU) of chain 0>: ['OXT'], <Residue 169 (GLU) of chain 1>: ['OXT'], <Residue 254 (GLU) of chain 2>: ['OXT'], <Residue 339 (GLU) of chain 3>: ['OXT'], <Residue 424 (GLU) of chain 4>: ['OXT'], <Residue 509 (GLU) of chain 5>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:56:37.706465 22419413100352 run_af2c_min.py:110] DVL1_MOUSE-DIX_x6 relaxation done, time spent 47.5 seconds, Efinal -6385.23, rmsd 0.41
+I0215 21:56:37.706591 22419413100352 run_af2c_min.py:88] DVL1_MOUSE-DIX_x6 processing model_4_multimer_v2_p1_230215_464753.pdb
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:56:42.982821 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 84 (GLU) of chain 0>: ['OXT'], <Residue 169 (GLU) of chain 1>: ['OXT'], <Residue 254 (GLU) of chain 2>: ['OXT'], <Residue 339 (GLU) of chain 3>: ['OXT'], <Residue 424 (GLU) of chain 4>: ['OXT'], <Residue 509 (GLU) of chain 5>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:56:43.774196 22419413100352 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0215 21:56:44.631008 22419413100352 amber_minimize.py:69] Restraining 4182 / 8316 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:57:19.376796 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:57:21.014219 22419413100352 amber_minimize.py:500] Iteration completed: Einit 3330664.88 Efinal -6350.36 Time 30.73 s num residue violations 0 num residue exclusions 0 
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:57:26.170107 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 84 (GLU) of chain 0>: ['OXT'], <Residue 169 (GLU) of chain 1>: ['OXT'], <Residue 254 (GLU) of chain 2>: ['OXT'], <Residue 339 (GLU) of chain 3>: ['OXT'], <Residue 424 (GLU) of chain 4>: ['OXT'], <Residue 509 (GLU) of chain 5>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:57:27.696538 22419413100352 run_af2c_min.py:110] DVL1_MOUSE-DIX_x6 relaxation done, time spent 49.8 seconds, Efinal -6350.36, rmsd 0.42
+I0215 21:57:27.696654 22419413100352 run_af2c_min.py:88] DVL1_MOUSE-DIX_x6 processing model_3_multimer_v2_p1_230215_628936.pdb
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:57:32.515480 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 84 (GLU) of chain 0>: ['OXT'], <Residue 169 (GLU) of chain 1>: ['OXT'], <Residue 254 (GLU) of chain 2>: ['OXT'], <Residue 339 (GLU) of chain 3>: ['OXT'], <Residue 424 (GLU) of chain 4>: ['OXT'], <Residue 509 (GLU) of chain 5>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:57:33.280244 22419413100352 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0215 21:57:34.119174 22419413100352 amber_minimize.py:69] Restraining 4182 / 8316 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:58:05.756585 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:58:07.375232 22419413100352 amber_minimize.py:500] Iteration completed: Einit 4538307.57 Efinal -6498.49 Time 28.27 s num residue violations 0 num residue exclusions 0 
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:58:11.979582 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 84 (GLU) of chain 0>: ['OXT'], <Residue 169 (GLU) of chain 1>: ['OXT'], <Residue 254 (GLU) of chain 2>: ['OXT'], <Residue 339 (GLU) of chain 3>: ['OXT'], <Residue 424 (GLU) of chain 4>: ['OXT'], <Residue 509 (GLU) of chain 5>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:58:13.640559 22419413100352 run_af2c_min.py:110] DVL1_MOUSE-DIX_x6 relaxation done, time spent 45.6 seconds, Efinal -6498.49, rmsd 0.41
+I0215 21:58:13.640686 22419413100352 run_af2c_min.py:88] DVL1_MOUSE-DIX_x6 processing model_5_multimer_v2_p1_230215_314191.pdb
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:58:18.731966 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 84 (GLU) of chain 0>: ['OXT'], <Residue 169 (GLU) of chain 1>: ['OXT'], <Residue 254 (GLU) of chain 2>: ['OXT'], <Residue 339 (GLU) of chain 3>: ['OXT'], <Residue 424 (GLU) of chain 4>: ['OXT'], <Residue 509 (GLU) of chain 5>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:58:19.512600 22419413100352 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0215 21:58:20.381467 22419413100352 amber_minimize.py:69] Restraining 4182 / 8316 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:58:52.872215 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:58:54.493259 22419413100352 amber_minimize.py:500] Iteration completed: Einit 288073.77 Efinal -6650.11 Time 28.57 s num residue violations 0 num residue exclusions 0 
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0215 21:58:59.589787 22419413100352 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 84 (GLU) of chain 0>: ['OXT'], <Residue 169 (GLU) of chain 1>: ['OXT'], <Residue 254 (GLU) of chain 2>: ['OXT'], <Residue 339 (GLU) of chain 3>: ['OXT'], <Residue 424 (GLU) of chain 4>: ['OXT'], <Residue 509 (GLU) of chain 5>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0215 21:59:01.187626 22419413100352 run_af2c_min.py:110] DVL1_MOUSE-DIX_x6 relaxation done, time spent 47.3 seconds, Efinal -6650.11, rmsd 0.65
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  6_RLX
+Node list: ravg1063
+Job start: Wed Feb 15 21:54:23 CET 2023
+Job end:   Wed Feb 15 21:59:02 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/DVL1_MOUSE-DIX_x6/script3_relaxation.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4204169            6_RLX      1           108                             00:04:39      0:0
+4204169.0        python3      1      1    108    13157.99M    13157.99M   00:04:33      0:0
+  
+Maximum memory per node: 13.797156 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 48.3 %
+  
