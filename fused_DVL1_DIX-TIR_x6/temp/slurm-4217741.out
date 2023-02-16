@@ -1,0 +1,77 @@
+Info: input file name is fused_DVL1_DIX-TIR_x6
+Info: input target list is /u/flobnow/workingLama/scripts/myRuns/fused_DVL1_DIX-TIR_x6/target.lst
+Info: input feature directory is /u/flobnow/workingLama/feature_files
+Info: result output directory is /u/flobnow/workingLama/output_files
+Info: model preset is multimer_np
+Info: msa pairing is all
+Info: recycling setting is 1
+Info: using preset super2
+Info: set num_ensemble = 2
+Info: set max_recyles = 20
+Info: set recycle_tol = 0.1
+Info: mas_pairing mode is all
+I0216 02:23:25.248979 22926574569280 tpu_client.py:54] Starting the local TPU driver.
+I0216 02:23:25.251219 22926574569280 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0216 02:23:25.656127 22926574569280 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0216 02:23:28.403867 22926574569280 run_af2c_mod.py:481] Have 1 models: ['model_4_multimer_v2_p1']
+Info: working on target fused_DVL1_DIX-TIR_x6
+I0216 02:23:29.405076 22926574569280 run_af2c_mod.py:512] Using random seed 208031684775096016 for the data pipeline
+Info: fused_DVL1_DIX-TIR_x6 found monomer fused_DVL1_DIX-TIR msa_depth = 4831, seq_len = 250, num_templ = 20
+Info: fused_DVL1_DIX-TIR reducing the number of structural templates to 4
+Info: 6 chain(s) to model {'A': 'fused_DVL1_DIX-TIR_1', 'B': 'fused_DVL1_DIX-TIR_1', 'C': 'fused_DVL1_DIX-TIR_1', 'D': 'fused_DVL1_DIX-TIR_1', 'E': 'fused_DVL1_DIX-TIR_1', 'F': 'fused_DVL1_DIX-TIR_1'}
+Info: modeling fused_DVL1_DIX-TIR_x6 with msa_depth = 4831, seq_len = 1500, num_templ = 24
+I0216 02:23:32.598496 22926574569280 run_af2c_mod.py:216] Running model model_4_multimer_v2_p1_230216_096016
+I0216 02:23:32.598980 22926574569280 model.py:205] Running predict with shape(feat) = {'msa': (4831, 1500), 'bert_mask': (4831, 1500), 'num_alignments': (), 'aatype': (1500,), 'seq_length': (), 'template_aatype': (24, 1500), 'template_all_atom_mask': (24, 1500, 37), 'template_all_atom_positions': (24, 1500, 37, 3), 'all_atom_positions': (1500, 37, 3), 'template_domain_names': (24,), 'asym_id': (1500,), 'sym_id': (1500,), 'entity_id': (1500,), 'residue_index': (1500,), 'deletion_matrix': (4831, 1500), 'seq_mask': (1500,), 'msa_mask': (4831, 1500), 'cluster_bias_mask': (4831,), 'pdb_residue_index': (1500,)}
+I0216 03:54:34.521565 22926574569280 run_af2c_mod.py:270] Total JAX model model_4_multimer_v2_p1_230216_096016 predict time (includes compilation time): 5461.9 seconds
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_00,  tol =   inf, pLDDT = 56.95, pTM-score = 0.2590, piTM-score = 0.1371, interface-score = 0.1049, iRes = 118  iCnt = 123 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_01,  tol = 70.03, pLDDT = 58.87, pTM-score = 0.2894, piTM-score = 0.1729, interface-score = 0.1927, iRes = 117  iCnt = 113 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_02,  tol = 12.90, pLDDT = 59.87, pTM-score = 0.2914, piTM-score = 0.1775, interface-score = 0.2108, iRes = 159  iCnt = 145 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_03,  tol = 12.31, pLDDT = 61.83, pTM-score = 0.2908, piTM-score = 0.1622, interface-score = 0.2433, iRes = 226  iCnt = 222 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_04,  tol =  5.07, pLDDT = 62.53, pTM-score = 0.2958, piTM-score = 0.1781, interface-score = 0.2726, iRes = 235  iCnt = 239 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_05,  tol =  0.92, pLDDT = 61.95, pTM-score = 0.2926, piTM-score = 0.1786, interface-score = 0.2788, iRes = 243  iCnt = 245 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_06,  tol =  0.60, pLDDT = 62.35, pTM-score = 0.2949, piTM-score = 0.1805, interface-score = 0.2829, iRes = 231  iCnt = 230 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_07,  tol =  0.78, pLDDT = 62.17, pTM-score = 0.2943, piTM-score = 0.1813, interface-score = 0.2782, iRes = 238  iCnt = 238 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_08,  tol =  0.88, pLDDT = 62.27, pTM-score = 0.2955, piTM-score = 0.1793, interface-score = 0.2766, iRes = 247  iCnt = 248 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_09,  tol =  0.66, pLDDT = 61.88, pTM-score = 0.2946, piTM-score = 0.1787, interface-score = 0.2723, iRes = 247  iCnt = 247 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_10,  tol =  0.48, pLDDT = 62.05, pTM-score = 0.2927, piTM-score = 0.1733, interface-score = 0.2633, iRes = 237  iCnt = 239 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_11,  tol =  0.38, pLDDT = 61.36, pTM-score = 0.2906, piTM-score = 0.1737, interface-score = 0.2537, iRes = 230  iCnt = 232 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_12,  tol =  0.66, pLDDT = 62.42, pTM-score = 0.2975, piTM-score = 0.1836, interface-score = 0.2799, iRes = 240  iCnt = 243 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_13,  tol =  0.39, pLDDT = 61.76, pTM-score = 0.2934, piTM-score = 0.1738, interface-score = 0.2607, iRes = 240  iCnt = 243 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_14,  tol =  0.75, pLDDT = 62.30, pTM-score = 0.2994, piTM-score = 0.1813, interface-score = 0.2701, iRes = 230  iCnt = 234 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_15,  tol =  0.89, pLDDT = 61.76, pTM-score = 0.2962, piTM-score = 0.1770, interface-score = 0.2710, iRes = 224  iCnt = 228 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_16,  tol =  0.85, pLDDT = 62.22, pTM-score = 0.2987, piTM-score = 0.1781, interface-score = 0.2745, iRes = 223  iCnt = 227 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_17,  tol =  0.50, pLDDT = 62.18, pTM-score = 0.3005, piTM-score = 0.1773, interface-score = 0.2764, iRes = 232  iCnt = 241 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_18,  tol =  1.04, pLDDT = 62.35, pTM-score = 0.3006, piTM-score = 0.1762, interface-score = 0.2787, iRes = 228  iCnt = 234 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016_recycled_19,  tol =  0.68, pLDDT = 61.77, pTM-score = 0.2973, piTM-score = 0.1729, interface-score = 0.2659, iRes = 227  iCnt = 231 
+Info: fused_DVL1_DIX-TIR_x6 model_4_multimer_v2_p1_230216_096016 performed 20 recycles, final tol = 0.67, pLDDT = 62.68, pTM-score = 0.3040, piTM-score = 0.1819, interface-score = 0.2850, iRes = 234  iCnt = 242 
+Info: num_clusters = 1, cluster_sizes = [6],  clusters = [['fused_DVL1_DIX-TIR_0', 'fused_DVL1_DIX-TIR_1', 'fused_DVL1_DIX-TIR_2', 'fused_DVL1_DIX-TIR_3', 'fused_DVL1_DIX-TIR_4', 'fused_DVL1_DIX-TIR_5']]
+
+I0216 03:54:40.759208 22926574569280 run_af2c_mod.py:404] Final timings for fused_DVL1_DIX-TIR_x6: {'features': 3.19, 'process_features_model_4_multimer_v2_p1_230216_096016': 0.0, 'predict_and_compile_model_4_multimer_v2_p1_230216_096016': 5461.9}
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  4_AF2C
+Node list: ravg1106
+Job start: Thu Feb 16 02:23:12 CET 2023
+Job end:   Thu Feb 16 03:54:44 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/fused_DVL1_DIX-TIR_x6
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/fused_DVL1_DIX-TIR_x6/script2_comp_model_4.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4217741           4_AF2C      1           108                             01:31:32      0:0
+4217741.0        python3      1      1    108    70533.07M    70533.07M   01:31:30      0:0
+  
+Maximum memory per node: 73.959281 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 1.9 %
+  
