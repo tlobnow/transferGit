@@ -1,0 +1,540 @@
+Info: input file name is P58802
+Info: input target list is /u/flobnow/workingLama/scripts/myRuns/P58802/target.lst
+Info: input feature directory is /u/flobnow/workingLama/feature_files
+Info: result output directory is /u/flobnow/workingLama/output_files
+Info: model preset is multimer_np
+Info: msa pairing is all
+Info: recycling setting is 1
+Info: using preset super2
+Info: set num_ensemble = 2
+Info: set max_recyles = 20
+Info: set recycle_tol = 0.1
+Info: mas_pairing mode is all
+I0306 17:21:19.573557 22669959583552 tpu_client.py:54] Starting the local TPU driver.
+I0306 17:21:19.573918 22669959583552 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0306 17:21:19.928925 22669959583552 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+Info: working on target MYD88_P58802_x1
+I0306 17:21:22.696582 22669959583552 run_af2c_mod.py:481] Have 1 models: ['model_1_multimer_v2_p1']
+I0306 17:21:22.696722 22669959583552 run_af2c_mod.py:512] Using random seed 5266130180205884437 for the data pipeline
+Info: MYD88_P58802_x1 found monomer MYD88_MOUSE msa_depth = 3425, seq_len = 296, num_templ = 20
+Info: MYD88_MOUSE reducing the number of structural templates to 4
+Info: MYD88_P58802_x1 found monomer P58802 msa_depth = 31765, seq_len = 500, num_templ = 19
+Info: P58802 MSA size is too large, reducing to 10000
+Info: P58802 reducing the number of structural templates to 4
+Info: 2 chain(s) to model {'A': 'MYD88_MOUSE_1', 'B': 'P58802_1'}
+Info: modeling MYD88_P58802_x1 with msa_depth = 6612, seq_len = 796, num_templ = 8
+I0306 17:21:24.194598 22669959583552 run_af2c_mod.py:216] Running model model_1_multimer_v2_p1_230306_884437
+I0306 17:21:24.195061 22669959583552 model.py:205] Running predict with shape(feat) = {'msa': (6612, 796), 'bert_mask': (6612, 796), 'num_alignments': (), 'aatype': (796,), 'seq_length': (), 'template_aatype': (8, 796), 'template_all_atom_mask': (8, 796, 37), 'template_all_atom_positions': (8, 796, 37, 3), 'all_atom_positions': (796, 37, 3), 'template_domain_names': (8,), 'asym_id': (796,), 'sym_id': (796,), 'entity_id': (796,), 'residue_index': (796,), 'deletion_matrix': (6612, 796), 'seq_mask': (796,), 'msa_mask': (6612, 796), 'cluster_bias_mask': (6612,), 'pdb_residue_index': (796,)}
+I0306 17:37:07.783904 22669959583552 run_af2c_mod.py:270] Total JAX model model_1_multimer_v2_p1_230306_884437 predict time (includes compilation time): 943.6 seconds
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_00,  tol =   inf, pLDDT = 68.42, pTM-score = 0.4955, piTM-score = 0.3305, interface-score = 0.0315, iRes = 60   iCnt = 99  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_01,  tol = 68.16, pLDDT = 67.35, pTM-score = 0.6266, piTM-score = 0.4874, interface-score = 0.3399, iRes = 54   iCnt = 62  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_02,  tol = 17.29, pLDDT = 70.96, pTM-score = 0.5065, piTM-score = 0.0557, interface-score = 0.0024, iRes = 18   iCnt = 17  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_03,  tol = 10.58, pLDDT = 69.74, pTM-score = 0.5780, piTM-score = 0.3950, interface-score = 0.1758, iRes = 49   iCnt = 57  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_04,  tol =  8.26, pLDDT = 71.86, pTM-score = 0.5053, piTM-score = 0.2350, interface-score = 0.0431, iRes = 36   iCnt = 39  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_05,  tol =  7.34, pLDDT = 71.15, pTM-score = 0.5416, piTM-score = 0.3832, interface-score = 0.1160, iRes = 61   iCnt = 88  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_06,  tol =  4.53, pLDDT = 71.83, pTM-score = 0.5060, piTM-score = 0.2777, interface-score = 0.0428, iRes = 37   iCnt = 32  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_07,  tol =  4.21, pLDDT = 72.18, pTM-score = 0.5188, piTM-score = 0.3080, interface-score = 0.0877, iRes = 44   iCnt = 41  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_08,  tol =  3.90, pLDDT = 71.04, pTM-score = 0.5571, piTM-score = 0.3752, interface-score = 0.1386, iRes = 55   iCnt = 69  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_09,  tol =  4.47, pLDDT = 71.89, pTM-score = 0.5161, piTM-score = 0.3101, interface-score = 0.0690, iRes = 52   iCnt = 56  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_10,  tol =  5.14, pLDDT = 71.88, pTM-score = 0.5190, piTM-score = 0.3127, interface-score = 0.0805, iRes = 52   iCnt = 49  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_11,  tol =  6.34, pLDDT = 71.96, pTM-score = 0.5207, piTM-score = 0.3238, interface-score = 0.0960, iRes = 44   iCnt = 46  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_12,  tol =  1.56, pLDDT = 71.98, pTM-score = 0.5253, piTM-score = 0.3383, interface-score = 0.0836, iRes = 54   iCnt = 57  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_13,  tol =  2.02, pLDDT = 71.72, pTM-score = 0.5168, piTM-score = 0.3095, interface-score = 0.0783, iRes = 49   iCnt = 49  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_14,  tol =  1.77, pLDDT = 72.05, pTM-score = 0.5241, piTM-score = 0.3363, interface-score = 0.0955, iRes = 50   iCnt = 49  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_15,  tol =  1.85, pLDDT = 71.62, pTM-score = 0.5163, piTM-score = 0.3193, interface-score = 0.0669, iRes = 47   iCnt = 45  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_16,  tol =  1.62, pLDDT = 69.84, pTM-score = 0.5694, piTM-score = 0.3750, interface-score = 0.1570, iRes = 46   iCnt = 57  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_17,  tol =  6.10, pLDDT = 71.63, pTM-score = 0.5177, piTM-score = 0.3328, interface-score = 0.0742, iRes = 48   iCnt = 50  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_18,  tol =  7.04, pLDDT = 71.65, pTM-score = 0.5254, piTM-score = 0.3317, interface-score = 0.0823, iRes = 55   iCnt = 55  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437_recycled_19,  tol =  4.88, pLDDT = 71.52, pTM-score = 0.5207, piTM-score = 0.3593, interface-score = 0.0873, iRes = 51   iCnt = 55  
+Info: MYD88_P58802_x1 model_1_multimer_v2_p1_230306_884437 performed 20 recycles, final tol = 2.41, pLDDT = 71.19, pTM-score = 0.5189, piTM-score = 0.3770, interface-score = 0.0723, iRes = 50   iCnt = 52  
+Info: num_clusters = 1, cluster_sizes = [2],  clusters = [['MYD88_MOUSE_0', 'P58802_0']]
+
+I0306 17:37:10.930528 22669959583552 run_af2c_mod.py:404] Final timings for MYD88_P58802_x1: {'features': 1.5, 'process_features_model_1_multimer_v2_p1_230306_884437': 0.0, 'predict_and_compile_model_1_multimer_v2_p1_230306_884437': 943.6}
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  1_AF2C
+Node list: ravg1068
+Job start: Mon Mar  6 17:21:10 CET 2023
+Job end:   Mon Mar  6 17:37:12 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/P58802
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/P58802/script2_comp_model_1.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4365574           1_AF2C      1           108                             00:16:02      0:0
+4365574.0        python3      1      1    108    24355.75M    24355.75M   00:15:58      0:0
+  
+Maximum memory per node: 25.538859 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 1.9 %
+  
+Info: input file name is P58802
+Info: input target list is /u/flobnow/workingLama/scripts/myRuns/P58802/target.lst
+Info: input feature directory is /u/flobnow/workingLama/feature_files
+Info: result output directory is /u/flobnow/workingLama/output_files
+Info: model preset is multimer_np
+Info: msa pairing is all
+Info: recycling setting is 1
+Info: using preset super2
+Info: set num_ensemble = 2
+Info: set max_recyles = 20
+Info: set recycle_tol = 0.1
+Info: mas_pairing mode is all
+I0306 22:37:25.826831 22513359550272 tpu_client.py:54] Starting the local TPU driver.
+I0306 22:37:25.827216 22513359550272 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0306 22:37:26.196231 22513359550272 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0306 22:37:29.008938 22513359550272 run_af2c_mod.py:481] Have 1 models: ['model_2_multimer_v2_p1']
+Info: working on target MYD88_P58802_x1
+I0306 22:37:30.010269 22513359550272 run_af2c_mod.py:512] Using random seed 4339458351820787588 for the data pipeline
+Info: MYD88_P58802_x1 found monomer MYD88_MOUSE msa_depth = 3425, seq_len = 296, num_templ = 20
+Info: MYD88_MOUSE reducing the number of structural templates to 4
+Info: MYD88_P58802_x1 found monomer P58802 msa_depth = 31765, seq_len = 500, num_templ = 19
+Info: P58802 MSA size is too large, reducing to 10000
+Info: P58802 reducing the number of structural templates to 4
+Info: 2 chain(s) to model {'A': 'MYD88_MOUSE_1', 'B': 'P58802_1'}
+Info: modeling MYD88_P58802_x1 with msa_depth = 6612, seq_len = 796, num_templ = 8
+I0306 22:37:31.427634 22513359550272 run_af2c_mod.py:216] Running model model_2_multimer_v2_p1_230306_787588
+I0306 22:37:31.428114 22513359550272 model.py:205] Running predict with shape(feat) = {'msa': (6612, 796), 'bert_mask': (6612, 796), 'num_alignments': (), 'aatype': (796,), 'seq_length': (), 'template_aatype': (8, 796), 'template_all_atom_mask': (8, 796, 37), 'template_all_atom_positions': (8, 796, 37, 3), 'all_atom_positions': (796, 37, 3), 'template_domain_names': (8,), 'asym_id': (796,), 'sym_id': (796,), 'entity_id': (796,), 'residue_index': (796,), 'deletion_matrix': (6612, 796), 'seq_mask': (796,), 'msa_mask': (6612, 796), 'cluster_bias_mask': (6612,), 'pdb_residue_index': (796,)}
+I0306 22:53:14.763598 22513359550272 run_af2c_mod.py:270] Total JAX model model_2_multimer_v2_p1_230306_787588 predict time (includes compilation time): 943.3 seconds
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_00,  tol =   inf, pLDDT = 68.57, pTM-score = 0.5151, piTM-score = 0.2577, interface-score = 0.0393, iRes = 46   iCnt = 38  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_01,  tol = 69.68, pLDDT = 69.14, pTM-score = 0.5251, piTM-score = 0.3374, interface-score = 0.0807, iRes = 32   iCnt = 45  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_02,  tol = 14.68, pLDDT = 71.40, pTM-score = 0.4828, piTM-score = 0.0029, interface-score = 0.0000, iRes = 4    iCnt = 2   
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_03,  tol = 13.62, pLDDT = 70.61, pTM-score = 0.4857, piTM-score = 0.0160, interface-score = 0.0003, iRes = 10   iCnt = 8   
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_04,  tol = 13.60, pLDDT = 69.41, pTM-score = 0.5774, piTM-score = 0.3619, interface-score = 0.1952, iRes = 53   iCnt = 66  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_05,  tol =  7.37, pLDDT = 71.89, pTM-score = 0.5026, piTM-score = 0.3048, interface-score = 0.0445, iRes = 39   iCnt = 38  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_06,  tol =  9.33, pLDDT = 71.51, pTM-score = 0.5043, piTM-score = 0.3512, interface-score = 0.0494, iRes = 37   iCnt = 36  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_07,  tol =  4.73, pLDDT = 71.63, pTM-score = 0.5094, piTM-score = 0.2827, interface-score = 0.0504, iRes = 35   iCnt = 34  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_08,  tol =  2.72, pLDDT = 71.52, pTM-score = 0.5087, piTM-score = 0.3196, interface-score = 0.0478, iRes = 33   iCnt = 32  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_09,  tol =  3.43, pLDDT = 71.60, pTM-score = 0.5129, piTM-score = 0.3276, interface-score = 0.0537, iRes = 36   iCnt = 33  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_10,  tol =  2.46, pLDDT = 70.89, pTM-score = 0.5485, piTM-score = 0.4311, interface-score = 0.1557, iRes = 65   iCnt = 104 
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_11,  tol =  9.76, pLDDT = 71.64, pTM-score = 0.5112, piTM-score = 0.3285, interface-score = 0.0572, iRes = 37   iCnt = 39  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_12,  tol =  6.91, pLDDT = 71.67, pTM-score = 0.5068, piTM-score = 0.3293, interface-score = 0.0552, iRes = 39   iCnt = 40  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_13,  tol =  7.18, pLDDT = 72.02, pTM-score = 0.5243, piTM-score = 0.4176, interface-score = 0.1352, iRes = 65   iCnt = 64  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_14,  tol =  7.90, pLDDT = 71.78, pTM-score = 0.5032, piTM-score = 0.2711, interface-score = 0.0338, iRes = 35   iCnt = 36  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_15,  tol =  5.92, pLDDT = 71.67, pTM-score = 0.4961, piTM-score = 0.2690, interface-score = 0.0197, iRes = 35   iCnt = 35  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_16,  tol =  5.67, pLDDT = 71.42, pTM-score = 0.4887, piTM-score = 0.2388, interface-score = 0.0122, iRes = 33   iCnt = 34  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_17,  tol =  3.73, pLDDT = 72.03, pTM-score = 0.5232, piTM-score = 0.4459, interface-score = 0.1278, iRes = 42   iCnt = 44  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_18,  tol =  6.08, pLDDT = 71.89, pTM-score = 0.5036, piTM-score = 0.2640, interface-score = 0.0262, iRes = 31   iCnt = 32  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588_recycled_19,  tol =  4.39, pLDDT = 71.12, pTM-score = 0.4947, piTM-score = 0.2616, interface-score = 0.0196, iRes = 38   iCnt = 40  
+Info: MYD88_P58802_x1 model_2_multimer_v2_p1_230306_787588 performed 20 recycles, final tol = 5.09, pLDDT = 71.60, pTM-score = 0.4921, piTM-score = 0.1201, interface-score = 0.0033, iRes = 22   iCnt = 22  
+Info: num_clusters = 1, cluster_sizes = [2],  clusters = [['MYD88_MOUSE_0', 'P58802_0']]
+
+I0306 22:53:18.085614 22513359550272 run_af2c_mod.py:404] Final timings for MYD88_P58802_x1: {'features': 1.42, 'process_features_model_2_multimer_v2_p1_230306_787588': 0.0, 'predict_and_compile_model_2_multimer_v2_p1_230306_787588': 943.3}
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  2_AF2C
+Node list: ravg1105
+Job start: Mon Mar  6 22:37:14 CET 2023
+Job end:   Mon Mar  6 22:53:19 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/P58802
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/P58802/script2_comp_model_2.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4365687           2_AF2C      1           108                             00:16:05      0:0
+4365687.0        python3      1      1    108    24266.42M    24266.42M   00:16:00      0:0
+  
+Maximum memory per node: 25.445183 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 1.9 %
+  
+Info: input file name is P58802
+Info: input target list is /u/flobnow/workingLama/scripts/myRuns/P58802/target.lst
+Info: input feature directory is /u/flobnow/workingLama/feature_files
+Info: result output directory is /u/flobnow/workingLama/output_files
+Info: model preset is multimer_np
+Info: msa pairing is all
+Info: recycling setting is 1
+Info: using preset super2
+Info: set num_ensemble = 2
+Info: set max_recyles = 20
+Info: set recycle_tol = 0.1
+Info: mas_pairing mode is all
+I0306 22:48:59.158022 23342043699008 tpu_client.py:54] Starting the local TPU driver.
+I0306 22:48:59.213987 23342043699008 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0306 22:48:59.611598 23342043699008 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0306 22:49:02.416997 23342043699008 run_af2c_mod.py:481] Have 1 models: ['model_3_multimer_v2_p1']
+Info: working on target MYD88_P58802_x1
+I0306 22:49:09.424193 23342043699008 run_af2c_mod.py:512] Using random seed 8704363012811120403 for the data pipeline
+Info: MYD88_P58802_x1 found monomer MYD88_MOUSE msa_depth = 3425, seq_len = 296, num_templ = 20
+Info: MYD88_MOUSE reducing the number of structural templates to 4
+Info: MYD88_P58802_x1 found monomer P58802 msa_depth = 31765, seq_len = 500, num_templ = 19
+Info: P58802 MSA size is too large, reducing to 10000
+Info: P58802 reducing the number of structural templates to 4
+Info: 2 chain(s) to model {'A': 'MYD88_MOUSE_1', 'B': 'P58802_1'}
+Info: modeling MYD88_P58802_x1 with msa_depth = 6612, seq_len = 796, num_templ = 8
+I0306 22:49:10.859804 23342043699008 run_af2c_mod.py:216] Running model model_3_multimer_v2_p1_230306_120403
+I0306 22:49:10.860273 23342043699008 model.py:205] Running predict with shape(feat) = {'msa': (6612, 796), 'bert_mask': (6612, 796), 'num_alignments': (), 'aatype': (796,), 'seq_length': (), 'template_aatype': (8, 796), 'template_all_atom_mask': (8, 796, 37), 'template_all_atom_positions': (8, 796, 37, 3), 'all_atom_positions': (796, 37, 3), 'template_domain_names': (8,), 'asym_id': (796,), 'sym_id': (796,), 'entity_id': (796,), 'residue_index': (796,), 'deletion_matrix': (6612, 796), 'seq_mask': (796,), 'msa_mask': (6612, 796), 'cluster_bias_mask': (6612,), 'pdb_residue_index': (796,)}
+I0306 23:04:56.434994 23342043699008 run_af2c_mod.py:270] Total JAX model model_3_multimer_v2_p1_230306_120403 predict time (includes compilation time): 945.6 seconds
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_00,  tol =   inf, pLDDT = 66.83, pTM-score = 0.6139, piTM-score = 0.3788, interface-score = 0.2623, iRes = 34   iCnt = 47  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_01,  tol = 74.04, pLDDT = 69.58, pTM-score = 0.5113, piTM-score = 0.4095, interface-score = 0.0170, iRes = 45   iCnt = 67  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_02,  tol = 17.81, pLDDT = 68.34, pTM-score = 0.5419, piTM-score = 0.3719, interface-score = 0.1092, iRes = 33   iCnt = 49  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_03,  tol = 12.62, pLDDT = 70.32, pTM-score = 0.4991, piTM-score = 0.0190, interface-score = 0.0001, iRes = 9    iCnt = 7   
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_04,  tol = 10.49, pLDDT = 69.36, pTM-score = 0.5217, piTM-score = 0.3560, interface-score = 0.0631, iRes = 37   iCnt = 64  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_05,  tol =  8.61, pLDDT = 69.93, pTM-score = 0.4983, piTM-score = 0.0245, interface-score = 0.0002, iRes = 14   iCnt = 12  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_06,  tol =  8.13, pLDDT = 68.96, pTM-score = 0.5365, piTM-score = 0.3610, interface-score = 0.0782, iRes = 34   iCnt = 47  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_07,  tol =  9.54, pLDDT = 70.04, pTM-score = 0.5026, piTM-score = 0.0794, interface-score = 0.0020, iRes = 23   iCnt = 19  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_08,  tol =  8.55, pLDDT = 70.55, pTM-score = 0.5002, piTM-score = 0.0384, interface-score = 0.0004, iRes = 16   iCnt = 12  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_09,  tol =  8.14, pLDDT = 69.96, pTM-score = 0.4991, piTM-score = 0.0090, interface-score = 0.0001, iRes = 8    iCnt = 5   
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_10,  tol =  8.12, pLDDT = 68.51, pTM-score = 0.5346, piTM-score = 0.0693, interface-score = 0.0058, iRes = 21   iCnt = 20  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_11,  tol = 13.92, pLDDT = 70.35, pTM-score = 0.4947, piTM-score = 0.0291, interface-score = 0.0002, iRes = 11   iCnt = 9   
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_12,  tol = 11.47, pLDDT = 69.87, pTM-score = 0.5209, piTM-score = 0.0666, interface-score = 0.0052, iRes = 21   iCnt = 22  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_13,  tol =  8.40, pLDDT = 70.19, pTM-score = 0.5065, piTM-score = 0.0308, interface-score = 0.0011, iRes = 14   iCnt = 9   
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_14,  tol =  9.26, pLDDT = 70.16, pTM-score = 0.5006, piTM-score = 0.0000, interface-score = 0.0000, iRes = 0    iCnt = 0   
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_15,  tol =  8.74, pLDDT = 70.12, pTM-score = 0.5188, piTM-score = 0.0512, interface-score = 0.0040, iRes = 19   iCnt = 15  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_16,  tol =  6.70, pLDDT = 70.84, pTM-score = 0.5009, piTM-score = 0.1582, interface-score = 0.0048, iRes = 24   iCnt = 26  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_17,  tol =  9.61, pLDDT = 70.79, pTM-score = 0.5078, piTM-score = 0.3393, interface-score = 0.0604, iRes = 46   iCnt = 47  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_18,  tol =  9.61, pLDDT = 69.32, pTM-score = 0.5781, piTM-score = 0.4388, interface-score = 0.2454, iRes = 58   iCnt = 73  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403_recycled_19,  tol =  5.33, pLDDT = 70.91, pTM-score = 0.5013, piTM-score = 0.1682, interface-score = 0.0107, iRes = 27   iCnt = 20  
+Info: MYD88_P58802_x1 model_3_multimer_v2_p1_230306_120403 performed 20 recycles, final tol = 4.91, pLDDT = 70.55, pTM-score = 0.5067, piTM-score = 0.3540, interface-score = 0.0546, iRes = 39   iCnt = 42  
+Info: num_clusters = 1, cluster_sizes = [2],  clusters = [['MYD88_MOUSE_0', 'P58802_0']]
+
+I0306 23:04:59.614008 23342043699008 run_af2c_mod.py:404] Final timings for MYD88_P58802_x1: {'features': 1.43, 'process_features_model_3_multimer_v2_p1_230306_120403': 0.0, 'predict_and_compile_model_3_multimer_v2_p1_230306_120403': 945.6}
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  3_AF2C
+Node list: ravg1043
+Job start: Mon Mar  6 22:48:10 CET 2023
+Job end:   Mon Mar  6 23:05:01 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/P58802
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/P58802/script2_comp_model_3.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4365695           3_AF2C      1           108                             00:16:51      0:0
+4365695.0        python3      1      1    108    24746.55M    24746.55M   00:16:44      0:0
+  
+Maximum memory per node: 25.948637 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 1.8 %
+  
+Info: input file name is P58802
+Info: input target list is /u/flobnow/workingLama/scripts/myRuns/P58802/target.lst
+Info: input feature directory is /u/flobnow/workingLama/feature_files
+Info: result output directory is /u/flobnow/workingLama/output_files
+Info: model preset is multimer_np
+Info: msa pairing is all
+Info: recycling setting is 1
+Info: using preset super2
+Info: set num_ensemble = 2
+Info: set max_recyles = 20
+Info: set recycle_tol = 0.1
+Info: mas_pairing mode is all
+I0306 23:08:10.820082 22830279718720 tpu_client.py:54] Starting the local TPU driver.
+I0306 23:08:10.904392 22830279718720 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0306 23:08:11.277048 22830279718720 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0306 23:08:14.045588 22830279718720 run_af2c_mod.py:481] Have 1 models: ['model_4_multimer_v2_p1']
+Info: working on target MYD88_P58802_x1
+I0306 23:08:18.049816 22830279718720 run_af2c_mod.py:512] Using random seed 3135478556728141366 for the data pipeline
+Info: MYD88_P58802_x1 found monomer MYD88_MOUSE msa_depth = 3425, seq_len = 296, num_templ = 20
+Info: MYD88_MOUSE reducing the number of structural templates to 4
+Info: MYD88_P58802_x1 found monomer P58802 msa_depth = 31765, seq_len = 500, num_templ = 19
+Info: P58802 MSA size is too large, reducing to 10000
+Info: P58802 reducing the number of structural templates to 4
+Info: 2 chain(s) to model {'A': 'MYD88_MOUSE_1', 'B': 'P58802_1'}
+Info: modeling MYD88_P58802_x1 with msa_depth = 6612, seq_len = 796, num_templ = 8
+I0306 23:08:19.425664 22830279718720 run_af2c_mod.py:216] Running model model_4_multimer_v2_p1_230306_141366
+I0306 23:08:19.426179 22830279718720 model.py:205] Running predict with shape(feat) = {'msa': (6612, 796), 'bert_mask': (6612, 796), 'num_alignments': (), 'aatype': (796,), 'seq_length': (), 'template_aatype': (8, 796), 'template_all_atom_mask': (8, 796, 37), 'template_all_atom_positions': (8, 796, 37, 3), 'all_atom_positions': (796, 37, 3), 'template_domain_names': (8,), 'asym_id': (796,), 'sym_id': (796,), 'entity_id': (796,), 'residue_index': (796,), 'deletion_matrix': (6612, 796), 'seq_mask': (796,), 'msa_mask': (6612, 796), 'cluster_bias_mask': (6612,), 'pdb_residue_index': (796,)}
+I0306 23:24:12.280728 22830279718720 run_af2c_mod.py:270] Total JAX model model_4_multimer_v2_p1_230306_141366 predict time (includes compilation time): 952.9 seconds
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_00,  tol =   inf, pLDDT = 68.17, pTM-score = 0.5379, piTM-score = 0.2090, interface-score = 0.0625, iRes = 25   iCnt = 39  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_01,  tol = 78.28, pLDDT = 70.00, pTM-score = 0.4992, piTM-score = 0.4392, interface-score = 0.0123, iRes = 39   iCnt = 79  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_02,  tol = 22.77, pLDDT = 71.41, pTM-score = 0.5132, piTM-score = 0.3858, interface-score = 0.1327, iRes = 39   iCnt = 40  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_03,  tol = 14.65, pLDDT = 71.33, pTM-score = 0.5058, piTM-score = 0.2891, interface-score = 0.0407, iRes = 38   iCnt = 35  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_04,  tol = 14.13, pLDDT = 70.42, pTM-score = 0.5096, piTM-score = 0.2341, interface-score = 0.0247, iRes = 36   iCnt = 31  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_05,  tol = 21.46, pLDDT = 71.98, pTM-score = 0.5126, piTM-score = 0.3125, interface-score = 0.0831, iRes = 34   iCnt = 40  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_06,  tol = 16.99, pLDDT = 72.12, pTM-score = 0.5073, piTM-score = 0.2636, interface-score = 0.0330, iRes = 35   iCnt = 35  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_07,  tol = 14.39, pLDDT = 71.19, pTM-score = 0.5677, piTM-score = 0.4267, interface-score = 0.1958, iRes = 72   iCnt = 108 
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_08,  tol = 12.99, pLDDT = 72.04, pTM-score = 0.5070, piTM-score = 0.2708, interface-score = 0.0433, iRes = 42   iCnt = 42  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_09,  tol = 10.88, pLDDT = 72.42, pTM-score = 0.5213, piTM-score = 0.4192, interface-score = 0.1293, iRes = 51   iCnt = 51  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_10,  tol =  4.17, pLDDT = 71.95, pTM-score = 0.5124, piTM-score = 0.2990, interface-score = 0.0543, iRes = 47   iCnt = 43  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_11,  tol =  3.84, pLDDT = 70.04, pTM-score = 0.5676, piTM-score = 0.4086, interface-score = 0.2057, iRes = 67   iCnt = 93  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_12,  tol =  6.50, pLDDT = 72.27, pTM-score = 0.5223, piTM-score = 0.3938, interface-score = 0.1388, iRes = 52   iCnt = 52  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_13,  tol =  6.02, pLDDT = 71.95, pTM-score = 0.5090, piTM-score = 0.2840, interface-score = 0.0466, iRes = 45   iCnt = 41  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_14,  tol =  4.88, pLDDT = 70.34, pTM-score = 0.5840, piTM-score = 0.4283, interface-score = 0.2511, iRes = 72   iCnt = 98  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_15,  tol =  5.72, pLDDT = 72.44, pTM-score = 0.5070, piTM-score = 0.2781, interface-score = 0.0420, iRes = 42   iCnt = 38  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_16,  tol =  7.11, pLDDT = 72.30, pTM-score = 0.5185, piTM-score = 0.4180, interface-score = 0.1260, iRes = 49   iCnt = 50  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_17,  tol =  5.32, pLDDT = 72.12, pTM-score = 0.5124, piTM-score = 0.3067, interface-score = 0.0534, iRes = 43   iCnt = 39  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_18,  tol =  3.80, pLDDT = 72.09, pTM-score = 0.5152, piTM-score = 0.3245, interface-score = 0.0711, iRes = 43   iCnt = 40  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366_recycled_19,  tol =  3.44, pLDDT = 72.11, pTM-score = 0.5043, piTM-score = 0.2794, interface-score = 0.0357, iRes = 37   iCnt = 33  
+Info: MYD88_P58802_x1 model_4_multimer_v2_p1_230306_141366 performed 20 recycles, final tol = 4.13, pLDDT = 70.70, pTM-score = 0.5385, piTM-score = 0.4096, interface-score = 0.1412, iRes = 70   iCnt = 96  
+Info: num_clusters = 1, cluster_sizes = [2],  clusters = [['MYD88_MOUSE_0', 'P58802_0']]
+
+I0306 23:24:15.501597 22830279718720 run_af2c_mod.py:404] Final timings for MYD88_P58802_x1: {'features': 1.37, 'process_features_model_4_multimer_v2_p1_230306_141366': 0.0, 'predict_and_compile_model_4_multimer_v2_p1_230306_141366': 952.9}
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  4_AF2C
+Node list: ravg1051
+Job start: Mon Mar  6 23:07:45 CET 2023
+Job end:   Mon Mar  6 23:24:17 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/P58802
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/P58802/script2_comp_model_4.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4365721           4_AF2C      1           108                             00:16:32      0:0
+4365721.0        python3      1      1    108    24387.59M    24387.59M   00:16:28      0:0
+  
+Maximum memory per node: 25.572244 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 1.8 %
+  
+Info: input file name is P58802
+Info: input target list is /u/flobnow/workingLama/scripts/myRuns/P58802/target.lst
+Info: input feature directory is /u/flobnow/workingLama/feature_files
+Info: result output directory is /u/flobnow/workingLama/output_files
+Info: model preset is multimer_np
+Info: msa pairing is all
+Info: recycling setting is 1
+Info: using preset super2
+Info: set num_ensemble = 2
+Info: set max_recyles = 20
+Info: set recycle_tol = 0.1
+Info: mas_pairing mode is all
+I0306 23:42:01.054227 23050539718464 tpu_client.py:54] Starting the local TPU driver.
+I0306 23:42:01.054604 23050539718464 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0306 23:42:01.426957 23050539718464 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0306 23:42:04.215255 23050539718464 run_af2c_mod.py:481] Have 1 models: ['model_5_multimer_v2_p1']
+Info: working on target MYD88_P58802_x1
+I0306 23:42:09.220604 23050539718464 run_af2c_mod.py:512] Using random seed 5657487400242886567 for the data pipeline
+Info: MYD88_P58802_x1 found monomer MYD88_MOUSE msa_depth = 3425, seq_len = 296, num_templ = 20
+Info: MYD88_MOUSE reducing the number of structural templates to 4
+Info: MYD88_P58802_x1 found monomer P58802 msa_depth = 31765, seq_len = 500, num_templ = 19
+Info: P58802 MSA size is too large, reducing to 10000
+Info: P58802 reducing the number of structural templates to 4
+Info: 2 chain(s) to model {'A': 'MYD88_MOUSE_1', 'B': 'P58802_1'}
+Info: modeling MYD88_P58802_x1 with msa_depth = 6612, seq_len = 796, num_templ = 8
+I0306 23:42:10.555316 23050539718464 run_af2c_mod.py:216] Running model model_5_multimer_v2_p1_230306_886567
+I0306 23:42:10.555814 23050539718464 model.py:205] Running predict with shape(feat) = {'msa': (6612, 796), 'bert_mask': (6612, 796), 'num_alignments': (), 'aatype': (796,), 'seq_length': (), 'template_aatype': (8, 796), 'template_all_atom_mask': (8, 796, 37), 'template_all_atom_positions': (8, 796, 37, 3), 'all_atom_positions': (796, 37, 3), 'template_domain_names': (8,), 'asym_id': (796,), 'sym_id': (796,), 'entity_id': (796,), 'residue_index': (796,), 'deletion_matrix': (6612, 796), 'seq_mask': (796,), 'msa_mask': (6612, 796), 'cluster_bias_mask': (6612,), 'pdb_residue_index': (796,)}
+I0306 23:57:49.507895 23050539718464 run_af2c_mod.py:270] Total JAX model model_5_multimer_v2_p1_230306_886567 predict time (includes compilation time): 939.0 seconds
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_00,  tol =   inf, pLDDT = 67.32, pTM-score = 0.5425, piTM-score = 0.0485, interface-score = 0.0077, iRes = 19   iCnt = 17  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_01,  tol = 65.90, pLDDT = 68.80, pTM-score = 0.4941, piTM-score = 0.3865, interface-score = 0.0216, iRes = 54   iCnt = 83  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_02,  tol = 19.76, pLDDT = 69.64, pTM-score = 0.4829, piTM-score = 0.0487, interface-score = 0.0009, iRes = 17   iCnt = 14  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_03,  tol =  6.92, pLDDT = 69.65, pTM-score = 0.4900, piTM-score = 0.0174, interface-score = 0.0003, iRes = 7    iCnt = 5   
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_04,  tol = 13.14, pLDDT = 69.75, pTM-score = 0.4808, piTM-score = 0.1021, interface-score = 0.0006, iRes = 20   iCnt = 31  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_05,  tol = 16.73, pLDDT = 69.99, pTM-score = 0.4863, piTM-score = 0.3206, interface-score = 0.0236, iRes = 30   iCnt = 39  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_06,  tol = 12.13, pLDDT = 69.21, pTM-score = 0.4930, piTM-score = 0.0307, interface-score = 0.0009, iRes = 13   iCnt = 10  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_07,  tol = 10.92, pLDDT = 70.94, pTM-score = 0.4875, piTM-score = 0.3449, interface-score = 0.0387, iRes = 30   iCnt = 36  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_08,  tol = 11.99, pLDDT = 70.12, pTM-score = 0.5252, piTM-score = 0.3814, interface-score = 0.1181, iRes = 54   iCnt = 85  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_09,  tol =  8.45, pLDDT = 70.59, pTM-score = 0.4860, piTM-score = 0.3419, interface-score = 0.0196, iRes = 32   iCnt = 39  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_10,  tol =  6.65, pLDDT = 69.63, pTM-score = 0.5538, piTM-score = 0.3753, interface-score = 0.1702, iRes = 55   iCnt = 82  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_11,  tol =  8.94, pLDDT = 70.81, pTM-score = 0.4832, piTM-score = 0.2247, interface-score = 0.0080, iRes = 28   iCnt = 30  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_12,  tol =  8.82, pLDDT = 69.78, pTM-score = 0.5107, piTM-score = 0.4280, interface-score = 0.0653, iRes = 53   iCnt = 81  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_13,  tol = 24.81, pLDDT = 68.47, pTM-score = 0.5776, piTM-score = 0.5723, interface-score = 0.2563, iRes = 64   iCnt = 113 
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_14,  tol = 19.04, pLDDT = 70.94, pTM-score = 0.4852, piTM-score = 0.1792, interface-score = 0.0076, iRes = 23   iCnt = 22  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_15,  tol = 14.67, pLDDT = 69.10, pTM-score = 0.5232, piTM-score = 0.2728, interface-score = 0.0549, iRes = 34   iCnt = 32  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_16,  tol = 18.53, pLDDT = 69.62, pTM-score = 0.5516, piTM-score = 0.3004, interface-score = 0.1369, iRes = 44   iCnt = 61  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_17,  tol = 15.46, pLDDT = 70.75, pTM-score = 0.4862, piTM-score = 0.3958, interface-score = 0.0239, iRes = 34   iCnt = 58  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_18,  tol = 10.42, pLDDT = 68.95, pTM-score = 0.5308, piTM-score = 0.0620, interface-score = 0.0066, iRes = 18   iCnt = 13  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567_recycled_19,  tol = 17.31, pLDDT = 70.76, pTM-score = 0.4849, piTM-score = 0.0915, interface-score = 0.0018, iRes = 22   iCnt = 18  
+Info: MYD88_P58802_x1 model_5_multimer_v2_p1_230306_886567 performed 20 recycles, final tol = 24.21, pLDDT = 70.77, pTM-score = 0.4854, piTM-score = 0.0867, interface-score = 0.0044, iRes = 23   iCnt = 22  
+Info: num_clusters = 1, cluster_sizes = [2],  clusters = [['MYD88_MOUSE_0', 'P58802_0']]
+
+I0306 23:57:52.699447 23050539718464 run_af2c_mod.py:404] Final timings for MYD88_P58802_x1: {'features': 1.33, 'process_features_model_5_multimer_v2_p1_230306_886567': 0.0, 'predict_and_compile_model_5_multimer_v2_p1_230306_886567': 939.0}
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  5_AF2C
+Node list: ravg1014
+Job start: Mon Mar  6 23:41:51 CET 2023
+Job end:   Mon Mar  6 23:57:54 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/P58802
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/P58802/script2_comp_model_5.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4365751           5_AF2C      1           108                             00:16:03      0:0
+4365751.0        python3      1      1    108    24342.61M    24342.61M   00:15:58      0:0
+  
+Maximum memory per node: 25.525076 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 1.9 %
+  
+Info: target file is /u/flobnow/workingLama/scripts/myRuns/P58802/target.lst
+Info: input directory of unrelaxed models is /u/flobnow/workingLama/output_files
+Info: output directory of relaxed models is /u/flobnow/workingLama/output_files
+/bin/sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:36:21.045695 22941422769984 run_af2c_min.py:88] MYD88_P58802_x1 processing model_2_multimer_v2_p1_230306_787588.pdb
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:36:32.530590 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 295 (PRO) of chain 0>: ['OXT'], <Residue 795 (LEU) of chain 1>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:36:33.727153 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:36:35.055184 22941422769984 amber_minimize.py:69] Restraining 6320 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:37:56.086131 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:37:57.242710 22941422769984 tpu_client.py:54] Starting the local TPU driver.
+I0307 21:37:57.243008 22941422769984 xla_bridge.py:212] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I0307 21:37:57.473537 22941422769984 xla_bridge.py:212] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I0307 21:38:08.165280 22941422769984 amber_minimize.py:500] Iteration completed: Einit 25237781.88 Efinal -11879.17 Time 74.58 s num residue violations 8 num residue exclusions 0 
+I0307 21:38:08.209482 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:38:09.476909 22941422769984 amber_minimize.py:69] Restraining 6259 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:39:20.079012 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:39:23.368996 22941422769984 amber_minimize.py:500] Iteration completed: Einit 16892.13 Efinal -14952.06 Time 64.21 s num residue violations 0 num residue exclusions 8 
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:39:31.412905 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 295 (PRO) of chain 0>: ['OXT'], <Residue 795 (LEU) of chain 1>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:39:33.949620 22941422769984 run_af2c_min.py:110] MYD88_P58802_x1 relaxation done, time spent 192.5 seconds, Efinal -14952.06, rmsd 0.40
+I0307 21:39:33.949894 22941422769984 run_af2c_min.py:88] MYD88_P58802_x1 processing model_4_multimer_v2_p1_230306_141366.pdb
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:39:42.127358 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 295 (PRO) of chain 0>: ['OXT'], <Residue 795 (LEU) of chain 1>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:39:43.356357 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:39:44.633765 22941422769984 amber_minimize.py:69] Restraining 6320 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:41:08.144584 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:41:11.448487 22941422769984 amber_minimize.py:500] Iteration completed: Einit 683488030.73 Efinal -11292.60 Time 77.16 s num residue violations 4 num residue exclusions 0 
+I0307 21:41:11.449068 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:41:12.686410 22941422769984 amber_minimize.py:69] Restraining 6286 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:42:59.485343 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:43:02.851632 22941422769984 amber_minimize.py:500] Iteration completed: Einit 20251.87 Efinal -14855.64 Time 100.29 s num residue violations 0 num residue exclusions 4 
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:43:11.037214 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 295 (PRO) of chain 0>: ['OXT'], <Residue 795 (LEU) of chain 1>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:43:13.529490 22941422769984 run_af2c_min.py:110] MYD88_P58802_x1 relaxation done, time spent 219.2 seconds, Efinal -14855.64, rmsd 0.40
+I0307 21:43:13.529752 22941422769984 run_af2c_min.py:88] MYD88_P58802_x1 processing model_3_multimer_v2_p1_230306_120403.pdb
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:43:21.755001 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 295 (PRO) of chain 0>: ['OXT'], <Residue 795 (LEU) of chain 1>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:43:22.915360 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:43:24.203315 22941422769984 amber_minimize.py:69] Restraining 6320 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:44:42.095375 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:44:45.388764 22941422769984 amber_minimize.py:500] Iteration completed: Einit 6177072.08 Efinal -11702.44 Time 71.57 s num residue violations 9 num residue exclusions 0 
+I0307 21:44:45.389347 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:44:46.613228 22941422769984 amber_minimize.py:69] Restraining 6252 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:45:58.411507 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:46:01.793929 22941422769984 amber_minimize.py:500] Iteration completed: Einit 20885.02 Efinal -14839.38 Time 65.49 s num residue violations 3 num residue exclusions 9 
+I0307 21:46:01.794800 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:46:03.070642 22941422769984 amber_minimize.py:69] Restraining 6252 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:47:03.664690 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:47:06.963889 22941422769984 amber_minimize.py:500] Iteration completed: Einit 15835.75 Efinal -15923.32 Time 54.47 s num residue violations 5 num residue exclusions 9 
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:47:15.088291 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 295 (PRO) of chain 0>: ['OXT'], <Residue 795 (LEU) of chain 1>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:47:17.618393 22941422769984 run_af2c_min.py:110] MYD88_P58802_x1 relaxation done, time spent 243.7 seconds, Efinal -15923.32, rmsd 0.37
+I0307 21:47:17.618667 22941422769984 run_af2c_min.py:88] MYD88_P58802_x1 processing model_1_multimer_v2_p1_230306_884437.pdb
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:47:25.894917 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 295 (PRO) of chain 0>: ['OXT'], <Residue 795 (LEU) of chain 1>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:47:27.078567 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:47:28.377174 22941422769984 amber_minimize.py:69] Restraining 6320 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:48:50.032888 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:48:53.367477 22941422769984 amber_minimize.py:500] Iteration completed: Einit 149863348.07 Efinal -13191.28 Time 75.30 s num residue violations 4 num residue exclusions 0 
+I0307 21:48:53.368072 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:48:54.626393 22941422769984 amber_minimize.py:69] Restraining 6299 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:50:03.154003 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:50:06.437397 22941422769984 amber_minimize.py:500] Iteration completed: Einit 14988.79 Efinal -15956.78 Time 61.94 s num residue violations 3 num residue exclusions 4 
+I0307 21:50:06.438482 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:50:07.756138 22941422769984 amber_minimize.py:69] Restraining 6294 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:51:14.102815 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:51:17.446995 22941422769984 amber_minimize.py:500] Iteration completed: Einit 33419.18 Efinal -16895.99 Time 59.96 s num residue violations 0 num residue exclusions 5 
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:51:25.442803 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 295 (PRO) of chain 0>: ['OXT'], <Residue 795 (LEU) of chain 1>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:51:28.035848 22941422769984 run_af2c_min.py:110] MYD88_P58802_x1 relaxation done, time spent 249.9 seconds, Efinal -16895.99, rmsd 0.40
+I0307 21:51:28.035981 22941422769984 run_af2c_min.py:88] MYD88_P58802_x1 processing model_5_multimer_v2_p1_230306_886567.pdb
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:51:36.209444 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 295 (PRO) of chain 0>: ['OXT'], <Residue 795 (LEU) of chain 1>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:51:37.408697 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:51:38.713147 22941422769984 amber_minimize.py:69] Restraining 6320 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:52:59.337402 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:53:02.689952 22941422769984 amber_minimize.py:500] Iteration completed: Einit 385882.09 Efinal -12197.26 Time 74.32 s num residue violations 29 num residue exclusions 0 
+I0307 21:53:02.690821 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:53:04.029877 22941422769984 amber_minimize.py:69] Restraining 6101 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:54:54.891234 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:54:58.141861 22941422769984 amber_minimize.py:500] Iteration completed: Einit 16599.39 Efinal -15488.70 Time 104.69 s num residue violations 20 num residue exclusions 29 
+I0307 21:54:58.142488 22941422769984 amber_minimize.py:408] Minimizing protein, attempt 1 of 100.
+I0307 21:54:59.399206 22941422769984 amber_minimize.py:69] Restraining 6087 / 12675 particles.
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:56:06.899386 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:56:10.242876 22941422769984 amber_minimize.py:500] Iteration completed: Einit 22810.83 Efinal -16475.13 Time 61.22 s num residue violations 15 num residue exclusions 31 
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+sh: /mpcdf/soft/SLE_15/packages/x86_64/alphafold/2.2.0/lib/libtinfo.so.6: no version information available (required by /lib64/libreadline.so.7)
+I0307 21:56:18.222607 22941422769984 amber_minimize.py:177] alterations info: {'nonstandard_residues': [], 'removed_heterogens': set(), 'missing_residues': {}, 'missing_heavy_atoms': {}, 'missing_terminals': {<Residue 295 (PRO) of chain 0>: ['OXT'], <Residue 795 (LEU) of chain 1>: ['OXT']}, 'Se_in_MET': [], 'removed_chains': {0: []}}
+I0307 21:56:20.750510 22941422769984 run_af2c_min.py:110] MYD88_P58802_x1 relaxation done, time spent 292.3 seconds, Efinal -16475.13, rmsd 0.39
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: flobnow(42847)
+Job name:  6_RLX
+Node list: ravg1068
+Job start: Tue Mar  7 21:36:14 CET 2023
+Job end:   Tue Mar  7 21:56:21 CET 2023
+Work dir:  /raven/u/flobnow/workingLama/scripts/myRuns/P58802
+Command:   /raven/u/flobnow/workingLama/scripts/myRuns/P58802/script3_relaxation.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS        0.00M        0.00M    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+4375163            6_RLX      1           108                             00:20:07      0:0
+4375163.0        python3      1      1    108    16046.03M    16046.03M   00:20:04      0:0
+  
+Maximum memory per node: 16.825483 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 75.4 %
+  
